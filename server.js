@@ -26,7 +26,7 @@ var db = require('knex')({
     port : '5432',
     user : 'postgres',
     password : 'postgres',
-    database : 'crud_practice_1'
+    database : 'cl_admin'
   }
 });
 
@@ -53,7 +53,7 @@ app.use(bodyParser.json())
 app.use(morgan('combined')) // use 'tiny' or 'combined'
 
 // App Routes - Auth
-app.get('/', (req, res) => res.send('hello world'))
+app.get('/', (req, res) => res.send('Calibrapps Lab Admin Panel'))
 app.get('/crud', (req, res) => main.getTableData(req, res, db))
 app.post('/crud', (req, res) => main.postTableData(req, res, db))
 app.put('/crud', (req, res) => main.putTableData(req, res, db))

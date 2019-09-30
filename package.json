@@ -1,7 +1,7 @@
 {
-  "name": "crudPractice-api",
+  "name": "cl-admin",
   "version": "1.0.0",
-  "description": "Practicing crud",
+  "description": "Calibrapps Lab Admin Panel",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
